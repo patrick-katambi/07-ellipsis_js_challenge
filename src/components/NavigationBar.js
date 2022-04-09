@@ -6,12 +6,19 @@ function NavigationBar() {
     <div className=" w-full h-[80px] px-[10%] flex items-center justify-between bg-[beige] ">
       <Logo />
       <MenuLinksSection />
-      <div>Buttons</div>
+      <ActionButtons />
     </div>
   );
 }
 
 export default NavigationBar;
+
+function ActionButtons() {
+    return <div className=" flex items-center ">
+        <div className="cursor-pointer p-5 ">Login</div>
+        <div className=" bg-[#3c3c3c] text-[white] cursor-pointer ml-5 p-5 rounded-xl " >Start your free trial</div>
+    </div>
+}
 
 function Logo() {
   const logoNameFirstPart = "Demo";
