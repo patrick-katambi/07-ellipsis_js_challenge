@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function MovieSeriesCard(props) {
   return (
-    <div className=" w-[260px] h-[400px] mr-5 flex flex-col items-center cursor-pointer ">
+    <div className=" w-[180px] h-[300px] laptopLarge:w-[250px] laptopLarge:h-[400px] mr-5 flex flex-col items-center cursor-pointer ">
       <motion.div
         whileHover={{ borderColor: "white", borderWidth: "2px" }}
         className=" bg-[#161C23] border-[#238436] border-[1px] border-solid relative w-full h-full mt-5 rounded-2xl "

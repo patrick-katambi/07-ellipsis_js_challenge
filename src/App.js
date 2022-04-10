@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className=" bg-[#0D1116] text-[white] h-full w-full overflow-x-hidden ">
+    <div className=" bg-[#0D1116] text-[white] laptopLarge:text-[20px] text-[15px] h-screen w-screen desktop:w-[50%] desktop:mx-[auto] overflow-x-hidden ">
       <NavigationBar />
       <div className="h-[calc(100% - 80px)]">
         <Routes>
