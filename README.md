@@ -4,6 +4,8 @@
 
 ![alt text](https://github.com/patrick-katambi/ellipsis_js_challenge/blob/main/ellipsis2.PNG?raw=true)
 
+## Technologies used --> `React js` and `Tailwind Css`
+
 ## Live demonstration [`here`](https://ellipsis-js-challenge.vercel.app/) deployed on [`vercel`](https://vercel.com/)
 
 ## Setup Instrunctions
