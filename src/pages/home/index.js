@@ -22,8 +22,8 @@ function HomeContents() {
     <section className=" w-[80vw] h-[50vh] mx-[auto] mt-10 mb-[200px] ">
       <BigTitle title="Popular titles" />
       <div className="flex items-center">
-      <MovieSeriesCard image={placeHolderImage} overlayText="SERIES" label="Popular Series" />
-      <MovieSeriesCard image={placeHolderImage} overlayText="MOVIES" label="Popular Movies" />
+      <MovieSeriesCard image={placeHolderImage} overlayText="SERIES" label="Popular Series" route="series" />
+      <MovieSeriesCard image={placeHolderImage} overlayText="MOVIES" label="Popular Movies" route="movies" />
       </div>
     </section>
   );

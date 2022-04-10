@@ -19,18 +19,27 @@ function Movies() {
         .get(jsonDataUrl, { headers: { Accept: "application/json" } })
         .then((response) => {
           const movieData = response.data.entries.filter(
-            (dataEntry) => dataEntry.programType === "movie" && dataEntry.releaseYear >= 2010
+            (dataEntry) =>
+              dataEntry.programType === "movie" && dataEntry.releaseYear >= 2010
           );
           // console.log({movieData})
           setTimeout(() => {
             setLoading(false);
-            movieData.sort(function(a, b){
-              if(a.title < b.title) { return -1; }
-              if(a.title > b.title) { return 1; }
+            movieData.sort(function (a, b) {
+              if (a.title < b.title) {
+                return -1;
+              }
+              if (a.title > b.title) {
+                return 1;
+              }
               return 0;
-          })
+            });
             setMovies(movieData);
           }, 2500);
+        })
+        .catch((err) => {
+          setLoading(false);
+          setError("Oops something went wrong");
         });
     } catch (err) {
       setLoading(false);

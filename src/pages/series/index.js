@@ -22,18 +22,28 @@ function Series() {
         .get(jsonDataUrl, { headers: { Accept: "application/json" } })
         .then((response) => {
           const seriesData = response.data.entries.filter(
-            (dataEntry) => dataEntry.programType === "series" && dataEntry.releaseYear >= 2010
+            (dataEntry) =>
+              dataEntry.programType === "series" &&
+              dataEntry.releaseYear >= 2010
           );
           // console.log({seriesData})
           setTimeout(() => {
             setLoading(false);
-            seriesData.sort(function(a, b){
-              if(a.title < b.title) { return -1; }
-              if(a.title > b.title) { return 1; }
+            seriesData.sort(function (a, b) {
+              if (a.title < b.title) {
+                return -1;
+              }
+              if (a.title > b.title) {
+                return 1;
+              }
               return 0;
-          })
-            setSeries(seriesData.slice(0,21));
+            });
+            setSeries(seriesData.slice(0, 21));
           }, 2500);
+        })
+        .catch((err) => {
+          setLoading(false);
+          setError("Oops something went wrong");
         });
     } catch (err) {
       setLoading(false);
