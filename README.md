@@ -69,3 +69,5 @@ A `Next js` + `Three js Fiber` 3D websiite rendering a planet in space with orbi
 Github Link --> [`EarthKit Repo`](https://github.com/patrick-katambi/earthkit)
 
 Live website --> [`EarthKit Demo`](https://earthkit-okarlmhcz-patrick-katambi.vercel.app/) 
+
+# Thank you for reading
