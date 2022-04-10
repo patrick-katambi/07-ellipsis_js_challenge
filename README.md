@@ -70,4 +70,4 @@ Github Link --> [`EarthKit Repo`](https://github.com/patrick-katambi/earthkit)
 
 Live website --> [`EarthKit Demo`](https://earthkit-okarlmhcz-patrick-katambi.vercel.app/) 
 
-# Thank you for reading
+# Thank you for having a look, have a great day 👏
