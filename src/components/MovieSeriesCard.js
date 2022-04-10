@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
-function MovieSeriesCard() {
+function MovieSeriesCard(props) {
   return (
-    <div>MovieSeriesCard</div>
-  )
+    <div className=" w-[260px] h-[400px] mr-5 flex flex-col items-center cursor-pointer ">
+      <motion.div
+        whileHover={{ borderColor: "white", borderWidth: "2px" }}
+        className=" bg-[#161C23] border-[#238436] border-[1px] border-solid relative w-full h-full mt-5 rounded-2xl "
+      >
+        <img
+          src={props.image}
+          className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] "
+        />
+        <TitlesSmall title={props.overlayText} />
+      </motion.div>
+      <p className="mt-3">{props.label}</p>
+    </div>
+  );
 }
 
-export default MovieSeriesCard
+export default MovieSeriesCard;
+
+function TitlesSmall(props) {
+  return (
+    <p className=" font-bold text-2xl tracking-widest absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+      {props.title}
+    </p>
+  );
+}
