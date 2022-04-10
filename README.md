@@ -14,3 +14,7 @@
 `3` Once complete, you can start a local development server by running `npm start`
 
 `4` You can now view the project on `http://localhost:3000/`
+
+## Technical and Architectural choices
+
+### File structure
