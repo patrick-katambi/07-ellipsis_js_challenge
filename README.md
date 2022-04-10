@@ -18,3 +18,5 @@
 ## Technical and Architectural choices
 
 ### File structure
+
+![alt text](https://github.com/patrick-katambi/ellipsis_js_challenge/blob/main/file_structure.PNG?raw=true)
