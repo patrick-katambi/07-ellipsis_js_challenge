@@ -8,6 +8,7 @@ import Home from "./pages/home/index";
 import Series from "./pages/series/index";
 import Movies from "./pages/movies/index";
 import Footer from "./components/Footer";
+import MoviesOrSeriesView from "./pages/movie_or_series_view/MoviesOrSeriesView";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="series" element={<Series />} />
           <Route path="movies" element={<Movies />} />
+          <Route path="view" element={<MoviesOrSeriesView />} />
           <Route path="*" element={<p>404 error</p>} />
         </Routes>
       </div>
