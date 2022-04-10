@@ -62,7 +62,7 @@ If more time was given, I would definately;
 `1` Swap out the redux configuration since the default react hooks handled the states perfectly
 
 ## Proud project so far
-A `Next js` + `Three js Fiber` 3D websiite rendering a planet in space.
+A `Next js` + `Three js Fiber` 3D websiite rendering a planet in space with orbit controls.
 
 ![alt text](https://raw.githubusercontent.com/patrick-katambi/earthkit/main/earth.PNG?raw=true)
 
