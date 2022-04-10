@@ -1,5 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import MovieSeriesCard from "../../components/MovieSeriesCard";
+import placeHolderImage from "../../assets/placeholder.png";
 
 function Home() {
   return (
@@ -18,8 +20,12 @@ function BigTitle(props) {
 
 function HomeContents() {
   return (
-    <section className=" w-[80vw] h-[60vh] mx-[auto] mt-10 mb-[200px] ">
+    <section className=" w-[80vw] h-[50vh] mx-[auto] mt-10 mb-[200px] ">
       <BigTitle title="Popular titles" />
+      <div className="flex items-center">
+      <MovieSeriesCard image={placeHolderImage} overlayText="SERIES" label="Popular Series" />
+      <MovieSeriesCard image={placeHolderImage} overlayText="MOVIES" label="Popular Movies" />
+      </div>
     </section>
   );
 }
