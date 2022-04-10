@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/patrick-katambi/ellipsis_js_challenge/blob/main/ellipsis2.PNG?raw=true)
 
-## Live demonstration [`here`](https://ellipsis-js-challenge.vercel.app/)
+## Live demonstration [`here`](https://ellipsis-js-challenge.vercel.app/) deployed on [`vercel`](https://vercel.com/)
 
 ## Setup Instrunctions
 `1` Download the zip file and extract the file or clone this repo into your directory of choice
