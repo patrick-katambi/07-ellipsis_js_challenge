@@ -17,7 +17,7 @@ function Footer() {
   const footerSocials = [FaceBookIcon, TwitterIcon, InstagramIcon];
   const storesIcons = [AppStoreIcon, PlayStoreIcon, WindowsStoreIcon]
   return (
-    <div className=" px-[10%] w-full py-20 mt-8 bg-[#161C23] overflow-x-hidden bottom-0 left-0 right-0 flex flex-col items-start justify-center ">
+    <div className=" px-[10%] w-full py-20 mt-8 bg-[#161C23] opacity-60 overflow-x-hidden bottom-0 left-0 right-0 flex flex-col items-start justify-center ">
       <div className=" flex laptopSmall:flex-row flex-col laptopSmall:items-center items-start justify-center ">
         {footerRow1Links.map((link, index) => {
           return (
