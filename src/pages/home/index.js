@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import MovieSeriesCard from "../../components/MovieSeriesCard";
 import placeHolderImage from "../../assets/placeholder.png";
+import {BigTitle} from '../../components/BigTitle'
 
 function Home() {
   return (
@@ -14,9 +15,7 @@ function Home() {
 
 export default Home;
 
-function BigTitle(props) {
-  return <p className=" font-bold text-[50px] ">{props.title}</p>;
-}
+
 
 function HomeContents() {
   return (

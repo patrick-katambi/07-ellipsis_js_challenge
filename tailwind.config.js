@@ -8,7 +8,7 @@ module.exports = {
       'laptopSmall': '1024px',
       // => @media (min-width: 1024px) { ... }
       
-      'laptopLarge': '1440px',
+      'laptopLarge': '1640px',
       // => @media (min-width: 1024px) { ... }
 
       'desktop': '2560px',
