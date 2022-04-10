@@ -3,7 +3,7 @@ import { Routes, Route, Link, NavLink } from "react-router-dom";
 
 function NavigationBar() {
   return (
-    <div className=" w-full h-[80px] px-[10%] flex items-center justify-between bg-[beige] ">
+    <div className=" w-screen h-[80px] px-[10%] flex items-center justify-between bg-[#161C23] ">
       <Logo />
       <MenuLinksSection />
       <ActionButtons />
@@ -16,7 +16,7 @@ export default NavigationBar;
 function ActionButtons() {
     return <div className=" flex items-center ">
         <div className="cursor-pointer p-5 ">Login</div>
-        <div className=" bg-[#3c3c3c] text-[white] cursor-pointer ml-5 p-5 rounded-xl " >Start your free trial</div>
+        <div className=" bg-[#238436] text-[white] cursor-pointer ml-5 px-4 py-3 rounded-xl " >Start your free trial</div>
     </div>
 }
 
@@ -35,7 +35,7 @@ function Logo() {
 
 function MenuLinksSection(props) {
   const navItems = [
-    { path: "/home", label: "Home" },
+    { path: "/", label: "Home" },
     { path: "/movies", label: "Movies" },
     { path: "/series", label: "Series" },
   ];
@@ -57,7 +57,7 @@ function NavItem(props) {
           return {
               padding: '20px',
             fontSize: isActive ? "20px" : "15px",
-            color: isActive ? "black" : "grey",
+            color: isActive ? "white" : "grey",
             transition: '0.3s'
           };
         }}
